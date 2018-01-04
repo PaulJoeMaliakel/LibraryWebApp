@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>1 Col Portfolio - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/1-col-portfolio2.css" rel="stylesheet' %}">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="/authors/books/">Books</a>
+              <span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/authors/">Authors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="nav">
+       <a href="#" class="previous">&laquo; Previous</a>
+       <a href="#" class="next">Next &raquo;</a>
+       </div>
+    <div class="container">
+
+      <!-- Page Heading -->
+      <h1 class="my-4">Book Detail
+        
+      </h1>
+
+       
+      <div class="fad">
+        
+         
+        <!-- Left-aligned media object -->
+  <div class="media">
+    <div class="media-left">
+      <img src="{% static 'book.png' %}" class="media-object" style="width:60px">
+    </div>
+
+    <div class="media-body">
+      <h4 class="media-heading">{{ book.Book_name }}</h4>
+      <div class="isbn">
+     <p>ISBN - {{ book.isbn }}</p>
+    </div>
+      <div class="authors">
+        <p>By {{ author }}</p>
+       
+      </div>
+      <p> {{ book.desp }} </p>
+    </div>
+  </div>
+
+
+
+
+
+      </div>
+
+
+
+      <hr>
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  </body>
+
+</html>
